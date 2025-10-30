@@ -1,0 +1,20 @@
+
+<UserControl x:Class="ConcreteCrackManager.Views.UserAdminControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <DockPanel>
+        <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" Margin="4">
+            <TextBlock Text="Users & Roles" FontWeight="Bold" VerticalAlignment="Center" Margin="4"/>
+            <Button Content="Refresh" Click="OnRefresh" Margin="4"/>
+        </StackPanel>
+
+        <TabControl>
+            <TabItem Header="Users">
+                <ContentControl x:Name="UsersContent"/>
+            </TabItem>
+            <TabItem Header="Roles">
+                <ContentControl x:Name="RolesContent"/>
+            </TabItem>
+        </TabControl>
+    </DockPanel>
+</UserControl>

@@ -1,0 +1,22 @@
+
+<Window x:Class="ConcreteCrackManager.Views.DbRolesDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        Title="DB Roles (Postgres)" Height="400" Width="600">
+    <Grid Margin="8">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="0">
+            <TextBlock Text="SQL Command:" VerticalAlignment="Center" Margin="4"/>
+        </StackPanel>
+
+        <TextBox x:Name="SqlBox" Grid.Row="1" AcceptsReturn="True" VerticalScrollBarVisibility="Auto"/>
+        <StackPanel Orientation="Horizontal" Grid.Row="2" HorizontalAlignment="Right" Margin="4">
+            <Button Content="Run" Click="OnRun" Width="80" Margin="4"/>
+            <Button Content="Close" Click="OnClose" Width="80" Margin="4"/>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,24 @@
+
+<Window x:Class="ConcreteCrackManager.Views.ConnectionDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        Title="Connection Settings" Height="300" Width="440">
+    <Grid Margin="8">
+        <StackPanel>
+            <TextBlock Text="Host"/>
+            <TextBox x:Name="HostBox" Text="localhost"/>
+            <TextBlock Text="Port"/>
+            <TextBox x:Name="PortBox" Text="5432"/>
+            <TextBlock Text="Database"/>
+            <TextBox x:Name="DbBox" Text="concrete_inspections"/>
+            <TextBlock Text="Username"/>
+            <TextBox x:Name="UserBox" Text="concrete_admin"/>
+            <TextBlock Text="Password"/>
+            <PasswordBox x:Name="PassBox"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="4">
+                <Button Content="Test" Click="OnTest" Width="80" Margin="4"/>
+                <Button Content="Save" Click="OnSave" Width="80" Margin="4"/>
+                <Button Content="Close" Click="OnClose" Width="80" Margin="4"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
